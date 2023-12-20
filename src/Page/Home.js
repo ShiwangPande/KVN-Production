@@ -10,7 +10,6 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
-import './home_styles.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
