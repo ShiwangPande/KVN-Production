@@ -16,30 +16,12 @@ import Careers from './Page/Careers.js';
 import Contact from './Page/Contact.js';
 
 function App() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView, mainControls]);
+  
   return (
     <div className="App">
       <Router>
-        <Navbar />
+       
 
-        <motion.div
-          ref={ref}
-          variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden" animate={mainControls} transition={{ duration: 0.5, delay: 0.25 }}
-        >
           <Routes>
             <Route path="/" className='home' element={<Home />} />
             <Route path="/production" element={<Production />} />
@@ -52,7 +34,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
 
           </Routes>
-        </motion.div>
+      
         {/* <Footer /> */}
       </Router>
 
