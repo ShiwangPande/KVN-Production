@@ -89,7 +89,7 @@ function Home() {
                 <div class="relative h-[70vh] overflow-hidden rounded-lg md:h-[70vh]">
 
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-[100vw] h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -165,7 +165,7 @@ function Home() {
                         </Modal>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-[100vw] h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -241,7 +241,7 @@ function Home() {
                         </Modal>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-[100vw] h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -317,7 +317,7 @@ function Home() {
                         </Modal>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-[100vw] h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -393,7 +393,7 @@ function Home() {
                         </Modal>
                     </div>
                     <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-[100vw] h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
