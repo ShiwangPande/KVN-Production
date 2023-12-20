@@ -3,6 +3,17 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import Navbar from '../Navbar'
 import Carousel from '../carousel-3/Carousel'
 import Carousel1 from '../Components/Carousel2'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
+import './home_styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
 function Home() {
@@ -80,16 +91,11 @@ function Home() {
                 </CardBody>
             </Card>
 
-
-
-
-
-            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+            <div id="indicators-carousel" class="relative w-full my-10" data-carousel="static">
 
                 <div class="relative h-[70vh] overflow-hidden rounded-lg md:h-[70vh]">
-
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                    <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper">
+                        <SwiperSlide>   <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -103,69 +109,67 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <Modal
-                            backdrop="opaque"
-                            isOpen={isOpenModal1}
-                            size="full"
-                            width='100%'
-                            onOpenChange={onOpenChange1}
-                            scrollBehavior={scrollBehavior}
-                            classNames={{
-                                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
-                            }}
-                        >
-                            <ModalContent>
-                                {(onCloseModal1) => (
-                                    <>
-                                        <div className='event_modal h-full p-0 ' >
-                                            <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                            <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
-                                                <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
-                                                <ModalBody >
-                                                    <h2 id="modal-description" >
-                                                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                            <Modal
+                                backdrop="opaque"
+                                isOpen={isOpenModal1}
+                                size="full"
+                                width='100%'
+                                onOpenChange={onOpenChange1}
+                                scrollBehavior={scrollBehavior}
+                                classNames={{
+                                    backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                                }}
+                            >
+                                <ModalContent>
+                                    {(onCloseModal1) => (
+                                        <>
+                                            <div className='event_modal h-full p-0 ' >
+                                                <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
+                                                    <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
+                                                    <ModalBody >
+                                                        <h2 id="modal-description" >
+                                                            <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
 
-                                                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
-                                                            ----------------------------------------------
-                                                            Turn on Subtitles in Your Preferred Language.
+                                                            <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                                                                ----------------------------------------------
+                                                                Turn on Subtitles in Your Preferred Language.
 
-                                                            #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
-                                                            ----------------------------------------------
-                                                            ♫ Movie               :  KD - The Devil
-                                                            ♫ Banner             : KVN Productions
-                                                            ♫ Starring            : Dhruva Sarja
-                                                            ♫ Producer          : KVN
-                                                            ♫ Director            : Showman Prem's
-                                                            ♫ Music               : Arjun Janya
-                                                            ♫ Head-Business & Operations: Suprith
-                                                            ♫ Writer               : Vijay Eshwar
-                                                            ♫ D O P                : William David
-                                                            ♫ Editor               : SRINIVAS P BABU
-                                                            ♫ P R O                : Nagendra
-                                                            ♫ Art Director     : Mohan B Kere
-                                                            ----------------------------------------------
-                                                            Like our Facebook page: https://www.facebook.com/kvnproductions
-                                                            Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
-                                                            Follow us on Twitter: https://twitter.com/KvnProductions</p>
+                                                                #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
+                                                                ----------------------------------------------
+                                                                ♫ Movie               :  KD - The Devil
+                                                                ♫ Banner             : KVN Productions
+                                                                ♫ Starring            : Dhruva Sarja
+                                                                ♫ Producer          : KVN
+                                                                ♫ Director            : Showman Prem's
+                                                                ♫ Music               : Arjun Janya
+                                                                ♫ Head-Business & Operations: Suprith
+                                                                ♫ Writer               : Vijay Eshwar
+                                                                ♫ D O P                : William David
+                                                                ♫ Editor               : SRINIVAS P BABU
+                                                                ♫ P R O                : Nagendra
+                                                                ♫ Art Director     : Mohan B Kere
+                                                                ----------------------------------------------
+                                                                Like our Facebook page: https://www.facebook.com/kvnproductions
+                                                                Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
+                                                                Follow us on Twitter: https://twitter.com/KvnProductions</p>
 
-                                                    </h2>
-                                                </ModalBody>
-                                                <ModalFooter>
-                                                    <Button color="danger" variant="light" onPress={onCloseModal1}>
-                                                        Close
-                                                    </Button>
+                                                        </h2>
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onCloseModal1}>
+                                                            Close
+                                                        </Button>
 
-                                                </ModalFooter>
+                                                    </ModalFooter>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                                        </>
+                                    )}
+                                </ModalContent>
+                            </Modal></SwiperSlide>
+                        <SwiperSlide> <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -179,69 +183,67 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <Modal
-                            backdrop="opaque"
-                            isOpen={isOpenModal2}
-                            size="full"
-                            width='100%'
-                            onOpenChange={onOpenChange2}
-                            scrollBehavior={scrollBehavior}
-                            classNames={{
-                                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
-                            }}
-                        >
-                            <ModalContent>
-                                {(onCloseModal2) => (
-                                    <>
-                                        <div className='event_modal h-full p-0 ' >
-                                            <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                            <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
-                                                <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
-                                                <ModalBody >
-                                                    <h2 id="modal-description" >
-                                                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                            <Modal
+                                backdrop="opaque"
+                                isOpen={isOpenModal2}
+                                size="full"
+                                width='100%'
+                                onOpenChange={onOpenChange2}
+                                scrollBehavior={scrollBehavior}
+                                classNames={{
+                                    backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                                }}
+                            >
+                                <ModalContent>
+                                    {(onCloseModal2) => (
+                                        <>
+                                            <div className='event_modal h-full p-0 ' >
+                                                <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
+                                                    <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
+                                                    <ModalBody >
+                                                        <h2 id="modal-description" >
+                                                            <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
 
-                                                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
-                                                            ----------------------------------------------
-                                                            Turn on Subtitles in Your Preferred Language.
+                                                            <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                                                                ----------------------------------------------
+                                                                Turn on Subtitles in Your Preferred Language.
 
-                                                            #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
-                                                            ----------------------------------------------
-                                                            ♫ Movie               :  KD - The Devil
-                                                            ♫ Banner             : KVN Productions
-                                                            ♫ Starring            : Dhruva Sarja
-                                                            ♫ Producer          : KVN
-                                                            ♫ Director            : Showman Prem's
-                                                            ♫ Music               : Arjun Janya
-                                                            ♫ Head-Business & Operations: Suprith
-                                                            ♫ Writer               : Vijay Eshwar
-                                                            ♫ D O P                : William David
-                                                            ♫ Editor               : SRINIVAS P BABU
-                                                            ♫ P R O                : Nagendra
-                                                            ♫ Art Director     : Mohan B Kere
-                                                            ----------------------------------------------
-                                                            Like our Facebook page: https://www.facebook.com/kvnproductions
-                                                            Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
-                                                            Follow us on Twitter: https://twitter.com/KvnProductions</p>
+                                                                #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
+                                                                ----------------------------------------------
+                                                                ♫ Movie               :  KD - The Devil
+                                                                ♫ Banner             : KVN Productions
+                                                                ♫ Starring            : Dhruva Sarja
+                                                                ♫ Producer          : KVN
+                                                                ♫ Director            : Showman Prem's
+                                                                ♫ Music               : Arjun Janya
+                                                                ♫ Head-Business & Operations: Suprith
+                                                                ♫ Writer               : Vijay Eshwar
+                                                                ♫ D O P                : William David
+                                                                ♫ Editor               : SRINIVAS P BABU
+                                                                ♫ P R O                : Nagendra
+                                                                ♫ Art Director     : Mohan B Kere
+                                                                ----------------------------------------------
+                                                                Like our Facebook page: https://www.facebook.com/kvnproductions
+                                                                Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
+                                                                Follow us on Twitter: https://twitter.com/KvnProductions</p>
 
-                                                    </h2>
-                                                </ModalBody>
-                                                <ModalFooter>
-                                                    <Button color="danger" variant="light" onPress={onCloseModal2}>
-                                                        Close
-                                                    </Button>
+                                                        </h2>
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onCloseModal2}>
+                                                            Close
+                                                        </Button>
 
-                                                </ModalFooter>
+                                                    </ModalFooter>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                                        </>
+                                    )}
+                                </ModalContent>
+                            </Modal></SwiperSlide>
+                        <SwiperSlide>    <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -255,69 +257,67 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <Modal
-                            backdrop="opaque"
-                            isOpen={isOpenModal3}
-                            size="full"
-                            width='100%'
-                            onOpenChange={onOpenChange3}
-                            scrollBehavior={scrollBehavior}
-                            classNames={{
-                                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
-                            }}
-                        >
-                            <ModalContent>
-                                {(onCloseModal3) => (
-                                    <>
-                                        <div className='event_modal h-full p-0 ' >
-                                            <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                            <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
-                                                <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
-                                                <ModalBody >
-                                                    <h2 id="modal-description" >
-                                                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                            <Modal
+                                backdrop="opaque"
+                                isOpen={isOpenModal3}
+                                size="full"
+                                width='100%'
+                                onOpenChange={onOpenChange3}
+                                scrollBehavior={scrollBehavior}
+                                classNames={{
+                                    backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                                }}
+                            >
+                                <ModalContent>
+                                    {(onCloseModal3) => (
+                                        <>
+                                            <div className='event_modal h-full p-0 ' >
+                                                <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
+                                                    <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
+                                                    <ModalBody >
+                                                        <h2 id="modal-description" >
+                                                            <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
 
-                                                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
-                                                            ----------------------------------------------
-                                                            Turn on Subtitles in Your Preferred Language.
+                                                            <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                                                                ----------------------------------------------
+                                                                Turn on Subtitles in Your Preferred Language.
 
-                                                            #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
-                                                            ----------------------------------------------
-                                                            ♫ Movie               :  KD - The Devil
-                                                            ♫ Banner             : KVN Productions
-                                                            ♫ Starring            : Dhruva Sarja
-                                                            ♫ Producer          : KVN
-                                                            ♫ Director            : Showman Prem's
-                                                            ♫ Music               : Arjun Janya
-                                                            ♫ Head-Business & Operations: Suprith
-                                                            ♫ Writer               : Vijay Eshwar
-                                                            ♫ D O P                : William David
-                                                            ♫ Editor               : SRINIVAS P BABU
-                                                            ♫ P R O                : Nagendra
-                                                            ♫ Art Director     : Mohan B Kere
-                                                            ----------------------------------------------
-                                                            Like our Facebook page: https://www.facebook.com/kvnproductions
-                                                            Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
-                                                            Follow us on Twitter: https://twitter.com/KvnProductions</p>
+                                                                #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
+                                                                ----------------------------------------------
+                                                                ♫ Movie               :  KD - The Devil
+                                                                ♫ Banner             : KVN Productions
+                                                                ♫ Starring            : Dhruva Sarja
+                                                                ♫ Producer          : KVN
+                                                                ♫ Director            : Showman Prem's
+                                                                ♫ Music               : Arjun Janya
+                                                                ♫ Head-Business & Operations: Suprith
+                                                                ♫ Writer               : Vijay Eshwar
+                                                                ♫ D O P                : William David
+                                                                ♫ Editor               : SRINIVAS P BABU
+                                                                ♫ P R O                : Nagendra
+                                                                ♫ Art Director     : Mohan B Kere
+                                                                ----------------------------------------------
+                                                                Like our Facebook page: https://www.facebook.com/kvnproductions
+                                                                Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
+                                                                Follow us on Twitter: https://twitter.com/KvnProductions</p>
 
-                                                    </h2>
-                                                </ModalBody>
-                                                <ModalFooter>
-                                                    <Button color="danger" variant="light" onPress={onCloseModal3}>
-                                                        Close
-                                                    </Button>
+                                                        </h2>
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onCloseModal3}>
+                                                            Close
+                                                        </Button>
 
-                                                </ModalFooter>
+                                                    </ModalFooter>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                                        </>
+                                    )}
+                                </ModalContent>
+                            </Modal></SwiperSlide>
+                        <SwiperSlide> <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -331,69 +331,67 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <Modal
-                            backdrop="opaque"
-                            isOpen={isOpenModal4}
-                            size="full"
-                            width='100%'
-                            onOpenChange={onOpenChange4}
-                            scrollBehavior={scrollBehavior}
-                            classNames={{
-                                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
-                            }}
-                        >
-                            <ModalContent>
-                                {(onCloseModal4) => (
-                                    <>
-                                        <div className='event_modal h-full p-0 ' >
-                                            <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                            <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
-                                                <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
-                                                <ModalBody >
-                                                    <h2 id="modal-description" >
-                                                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                            <Modal
+                                backdrop="opaque"
+                                isOpen={isOpenModal4}
+                                size="full"
+                                width='100%'
+                                onOpenChange={onOpenChange4}
+                                scrollBehavior={scrollBehavior}
+                                classNames={{
+                                    backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                                }}
+                            >
+                                <ModalContent>
+                                    {(onCloseModal4) => (
+                                        <>
+                                            <div className='event_modal h-full p-0 ' >
+                                                <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
+                                                    <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
+                                                    <ModalBody >
+                                                        <h2 id="modal-description" >
+                                                            <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
 
-                                                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
-                                                            ----------------------------------------------
-                                                            Turn on Subtitles in Your Preferred Language.
+                                                            <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                                                                ----------------------------------------------
+                                                                Turn on Subtitles in Your Preferred Language.
 
-                                                            #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
-                                                            ----------------------------------------------
-                                                            ♫ Movie               :  KD - The Devil
-                                                            ♫ Banner             : KVN Productions
-                                                            ♫ Starring            : Dhruva Sarja
-                                                            ♫ Producer          : KVN
-                                                            ♫ Director            : Showman Prem's
-                                                            ♫ Music               : Arjun Janya
-                                                            ♫ Head-Business & Operations: Suprith
-                                                            ♫ Writer               : Vijay Eshwar
-                                                            ♫ D O P                : William David
-                                                            ♫ Editor               : SRINIVAS P BABU
-                                                            ♫ P R O                : Nagendra
-                                                            ♫ Art Director     : Mohan B Kere
-                                                            ----------------------------------------------
-                                                            Like our Facebook page: https://www.facebook.com/kvnproductions
-                                                            Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
-                                                            Follow us on Twitter: https://twitter.com/KvnProductions</p>
+                                                                #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
+                                                                ----------------------------------------------
+                                                                ♫ Movie               :  KD - The Devil
+                                                                ♫ Banner             : KVN Productions
+                                                                ♫ Starring            : Dhruva Sarja
+                                                                ♫ Producer          : KVN
+                                                                ♫ Director            : Showman Prem's
+                                                                ♫ Music               : Arjun Janya
+                                                                ♫ Head-Business & Operations: Suprith
+                                                                ♫ Writer               : Vijay Eshwar
+                                                                ♫ D O P                : William David
+                                                                ♫ Editor               : SRINIVAS P BABU
+                                                                ♫ P R O                : Nagendra
+                                                                ♫ Art Director     : Mohan B Kere
+                                                                ----------------------------------------------
+                                                                Like our Facebook page: https://www.facebook.com/kvnproductions
+                                                                Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
+                                                                Follow us on Twitter: https://twitter.com/KvnProductions</p>
 
-                                                    </h2>
-                                                </ModalBody>
-                                                <ModalFooter>
-                                                    <Button color="danger" variant="light" onPress={onCloseModal4}>
-                                                        Close
-                                                    </Button>
+                                                        </h2>
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onCloseModal4}>
+                                                            Close
+                                                        </Button>
 
-                                                </ModalFooter>
+                                                    </ModalFooter>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
-                    </div>
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                                        </>
+                                    )}
+                                </ModalContent>
+                            </Modal></SwiperSlide>
+                        <SwiperSlide>    <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://picsum.photos/640/360')] bg-gray-700 bg-blend-multiply">
                             <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
                                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
                                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
@@ -407,97 +405,96 @@ function Home() {
                                 </div>
                             </div>
                         </section>
-                        <Modal
-                            backdrop="opaque"
-                            isOpen={isOpenModal5}
-                            size="full"
-                            width='100%'
-                            onOpenChange={onOpenChange5}
-                            scrollBehavior={scrollBehavior}
-                            classNames={{
-                                backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
-                            }}
-                        >
-                            <ModalContent>
-                                {(onCloseModal5) => (
-                                    <>
-                                        <div className='event_modal h-full p-0 ' >
-                                            <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                            <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
-                                                <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
-                                                <ModalBody >
-                                                    <h2 id="modal-description" >
-                                                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                            <Modal
+                                backdrop="opaque"
+                                isOpen={isOpenModal5}
+                                size="full"
+                                width='100%'
+                                onOpenChange={onOpenChange5}
+                                scrollBehavior={scrollBehavior}
+                                classNames={{
+                                    backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20"
+                                }}
+                            >
+                                <ModalContent>
+                                    {(onCloseModal5) => (
+                                        <>
+                                            <div className='event_modal h-full p-0 ' >
+                                                <iframe class="w-full h-full max-w-full  shadow-xl" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=pCOuvdxIO5xHWp4C" title="YouTube video player" autoplay controls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                {/* <iframe class="mx-auto w-full lg:max-w-xl h-64 rounded-lg sm:h-[80vh]  sm:w-[100vw] shadow-xl" src="https://www.youtube.com/embed/KaLxCiilHns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                <div className="m-5 " style={{ flex: "1 1 35%", maxHeight: "750px", overflowY: "auto" }}>
+                                                    <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
+                                                    <ModalBody >
+                                                        <h2 id="modal-description" >
+                                                            <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
 
-                                                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
-                                                            ----------------------------------------------
-                                                            Turn on Subtitles in Your Preferred Language.
+                                                            <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                                                                ----------------------------------------------
+                                                                Turn on Subtitles in Your Preferred Language.
 
-                                                            #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
-                                                            ----------------------------------------------
-                                                            ♫ Movie               :  KD - The Devil
-                                                            ♫ Banner             : KVN Productions
-                                                            ♫ Starring            : Dhruva Sarja
-                                                            ♫ Producer          : KVN
-                                                            ♫ Director            : Showman Prem's
-                                                            ♫ Music               : Arjun Janya
-                                                            ♫ Head-Business & Operations: Suprith
-                                                            ♫ Writer               : Vijay Eshwar
-                                                            ♫ D O P                : William David
-                                                            ♫ Editor               : SRINIVAS P BABU
-                                                            ♫ P R O                : Nagendra
-                                                            ♫ Art Director     : Mohan B Kere
-                                                            ----------------------------------------------
-                                                            Like our Facebook page: https://www.facebook.com/kvnproductions
-                                                            Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
-                                                            Follow us on Twitter: https://twitter.com/KvnProductions</p>
+                                                                #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
+                                                                ----------------------------------------------
+                                                                ♫ Movie               :  KD - The Devil
+                                                                ♫ Banner             : KVN Productions
+                                                                ♫ Starring            : Dhruva Sarja
+                                                                ♫ Producer          : KVN
+                                                                ♫ Director            : Showman Prem's
+                                                                ♫ Music               : Arjun Janya
+                                                                ♫ Head-Business & Operations: Suprith
+                                                                ♫ Writer               : Vijay Eshwar
+                                                                ♫ D O P                : William David
+                                                                ♫ Editor               : SRINIVAS P BABU
+                                                                ♫ P R O                : Nagendra
+                                                                ♫ Art Director     : Mohan B Kere
+                                                                ----------------------------------------------
+                                                                Like our Facebook page: https://www.facebook.com/kvnproductions
+                                                                Follow us on Instagram: https://instagram.com/kvn.productions?utm_medium=copy_link
+                                                                Follow us on Twitter: https://twitter.com/KvnProductions</p>
 
-                                                    </h2>
-                                                </ModalBody>
-                                                <ModalFooter>
-                                                    <Button color="danger" variant="light" onPress={onCloseModal5}>
-                                                        Close
-                                                    </Button>
+                                                        </h2>
+                                                    </ModalBody>
+                                                    <ModalFooter>
+                                                        <Button color="danger" variant="light" onPress={onCloseModal5}>
+                                                            Close
+                                                        </Button>
 
-                                                </ModalFooter>
+                                                    </ModalFooter>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </>
-                                )}
-                            </ModalContent>
-                        </Modal>
-                    </div>
+                                        </>
+                                    )}
+                                </ModalContent>
+                            </Modal></SwiperSlide>
+                    </Swiper>
+
+
+
+
+
 
 
 
 
                 </div>
 
-                <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                </div>
 
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+
+                {/* <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
                         </svg>
                         <span class="sr-only">Previous</span>
                     </span>
                 </button>
                 <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                         </svg>
                         <span class="sr-only">Next</span>
                     </span>
-                </button>
+                </button> */}
             </div>
             {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/L1KYlnMRtqc?si=6YrIK_pP2JP7y1CB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
             {/* <div>
