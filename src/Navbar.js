@@ -6,7 +6,7 @@ function Navbar() {
     <div>
       <nav class="bg-zinc-900	 fixed w-full z-20 top-0 start-0  border-b-2 border-gray-700 shadow-md">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-3">
-          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} class="h-20" alt="Flowbite Logo" />
             {/* <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> <b className='text-yellow-500' > KVP </b>Productions</span> */}
           </a>
