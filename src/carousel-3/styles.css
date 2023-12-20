@@ -125,13 +125,3 @@ body {
     line-height: normal;
   }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .next-close {
-    position: relative;
-    right: -158px;
-    top: -15px;
-    width: 16px;
-    height: 38px; /* Adjust the height as needed */
-  }
-}
