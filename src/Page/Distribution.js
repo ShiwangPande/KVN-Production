@@ -51,7 +51,7 @@ function Distribution() {
                         <h2 id="modal-description" >
                           <h1 className='font-bold'>Action/ Drama | 2022</h1> <br />
 
-                          <p className='font-semibold text-3xl tracking-wide	leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
+                          <p className='font-semibold text-2xl lg:text-3xl tracking-wide	leading-8  lg:leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
 
                         </h2>
                       </ModalBody>
@@ -100,7 +100,7 @@ function Distribution() {
                         <h2 id="modal-description" >
                           <h1 className='font-bold'>Action/ Drama | 2022</h1> <br />
 
-                          <p className='font-semibold text-3xl tracking-wide	leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
+                          <p className='font-semibold text-2xl lg:text-3xl tracking-wide	leading-8  lg:leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
 
                         </h2>
                       </ModalBody>
@@ -149,7 +149,7 @@ function Distribution() {
                         <h2 id="modal-description" >
                           <h1 className='font-bold'>Action/ Drama | 2022</h1> <br />
 
-                          <p className='font-semibold text-3xl tracking-wide	leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
+                          <p className='font-semibold text-2xl lg:text-3xl tracking-wide	leading-8  lg:leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
 
                         </h2>
                       </ModalBody>
@@ -198,7 +198,7 @@ function Distribution() {
                         <h2 id="modal-description" >
                           <h1 className='font-bold'>Action/ Drama | 2022</h1> <br />
 
-                          <p className='font-semibold text-3xl tracking-wide	leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
+                          <p className='font-semibold text-2xl lg:text-3xl tracking-wide	leading-8  lg:leading-9 '>A tale of two legendary revolutionaries and their journey far away from home.</p>
 
                         </h2>
                       </ModalBody>
