@@ -108,8 +108,8 @@ body {
   .event_modal {
     display: flex;
     flex-direction: column;
-    height: 47rem;
-    padding: 35px;
+    height: 41rem;
+    padding: 50px;
   }
   .modal {
     width: 100%;
