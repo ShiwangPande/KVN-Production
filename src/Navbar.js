@@ -4,7 +4,7 @@ function Navbar() {
 
   return (
     <div>
-      <nav class="bg-zinc-900	 fixed w-full z-20 top-0 start-0  border-b-2 border-gray-700 shadow-md">
+      <nav class="bg-zinc-900	 fixed w-full px-5 z-20 top-0 start-0  border-b-2 border-gray-700 shadow-md">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-3">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} class="h-20" alt="Flowbite Logo" />
