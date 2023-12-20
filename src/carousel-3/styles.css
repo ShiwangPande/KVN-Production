@@ -108,7 +108,7 @@ body {
   .event_modal {
     display: flex;
     flex-direction: column;
-    height: 41rem;
+    height: 40rem;
     padding: 50px;
   }
   .modal {
