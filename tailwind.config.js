@@ -10,6 +10,5 @@ module.exports = {
     extend: {},
   },
   plugins: [nextui(),
-    require('flowbite/plugin')
   ],
 }
