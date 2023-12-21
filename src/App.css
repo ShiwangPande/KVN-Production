@@ -39,10 +39,8 @@
   visibility: visible;
   opacity: 1;
 }
-
-/* Hide the popup when the 'hidden' class is applied */
 .install-popup.hidden {
-  display: none; /* Explicitly hide for better control */
+  display: none;
 }
 @media (max-width: 600px) {
   .menu-icon {
