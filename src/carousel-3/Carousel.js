@@ -79,7 +79,7 @@ function Carousel() {
             className="slide_img"
             width={1000}
             alt="NextUI Fruit Image with Zoom"
-            src={image1}
+            src={image5}
           />
         </div>
         <Modal

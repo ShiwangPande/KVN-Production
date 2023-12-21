@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logo.png"
+import logo from "../logoss.webp"
 
 function Careers() {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -19,7 +19,7 @@ function Careers() {
       <nav class="bg-zinc-900	 fixed w-full px-5 z-20 top-0 start-0  border-b-2 border-gray-700 shadow-md">
       <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-3">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} class="h-20" alt="Flowbite Logo" />
+          <img rel="preload" as="image" src={logo} class="h-20" alt="Flowbite Logo" />
           {/* <span class="self-center text-2xl font-semibold whitespace-nowrap text-white"> <b className='text-yellow-500' > KVP </b>Productions</span> */}
         </a>
         <button onClick={handleShowNavbar} data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  " aria-controls="navbar-default" aria-expanded="false">
