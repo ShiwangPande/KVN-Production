@@ -1,39 +1,30 @@
 import React, { useEffect, useState } from 'react';
 
-const InstallPWA = () => {
+const InstallPopup = () => {
     const [deferredPrompt, setDeferredPrompt] = useState(null);
 
     useEffect(() => {
         const handleBeforeInstallPrompt = (event) => {
-            // Prevent the default behavior
             event.preventDefault();
-
-            // Stash the event so it can be triggered later
             setDeferredPrompt(event);
         };
-
 
         window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
 
         return () => {
             window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         };
-    }, [deferredPrompt]);
+    }, []);
 
-    const handleInstall = () => {
+    const handleInstallClick = () => {
         if (deferredPrompt) {
-            // Show the installation prompt
             deferredPrompt.prompt();
-
-            // Wait for the user to respond
             deferredPrompt.userChoice.then((choiceResult) => {
                 if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the installation');
+                    console.log('User accepted the install prompt');
                 } else {
-                    console.log('User dismissed the installation');
+                    console.log('User dismissed the install prompt');
                 }
-
-                // Clear the deferred prompt variable
                 setDeferredPrompt(null);
             });
         }
@@ -41,9 +32,12 @@ const InstallPWA = () => {
 
     return (
         <div>
-            <button onClick={handleInstall}>Install PWA</button>
+            <p>This app is a Progressive Web App (PWA).</p>
+            <button onClick={handleInstallClick} disabled={!deferredPrompt}>
+                Install App
+            </button>
         </div>
     );
 };
 
-export default InstallPWA;
+export default InstallPopup;
