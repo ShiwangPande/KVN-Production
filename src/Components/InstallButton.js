@@ -28,12 +28,19 @@ function InstallPopup() {
                     console.log('User dismissed the install prompt');
                 }
                 setDeferredPrompt(null);
-                setShowPopup(false);
+                setTimeout(() => { // Ensure state update propagates before DOM repaint
+                    setShowPopup(false);
+                }, 1);
             });
         }
     };
+
+    // also add hide/show logic to your install button
+
+    //  also add hide/show logic to your dismiss button
+
     return (
-        <div className={`install-popup  ${showPopup ? 'show' : ''}`}>
+        <div className={`install-popup ${showPopup ? 'hidden' : 'show'}`}>
             {/* <div className="install-popup">
                 <p>Install KVN Production App</p>
                 <button onClick={handleInstallClick}>Install</button>
@@ -48,6 +55,7 @@ function InstallPopup() {
                     <p className="text-center text-white mb-6">Welcome to KVN App</p>
 
                     <div className="flex gap-5 justify-between">
+                     
                         <button onClick={handleInstallClick} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Install</button>
                         <button onClick={() => setShowPopup(false)} className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Dismiss</button>
                     </div>

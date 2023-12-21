@@ -35,7 +35,15 @@
   justify-content: center;
   gap: 20px;
 }
+.install-popup.show {
+  visibility: visible;
+  opacity: 1;
+}
 
+/* Hide the popup when the 'hidden' class is applied */
+.install-popup.hidden {
+  display: none; /* Explicitly hide for better control */
+}
 @media (max-width: 600px) {
   .menu-icon {
     display: block;
