@@ -28,6 +28,9 @@ function App() {
       window.deferredPrompt = e;
       setShowPopup(true);
     });
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
   }, []);
 
 
