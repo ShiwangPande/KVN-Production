@@ -19,7 +19,10 @@
   box-sizing: border-box;
 }
 /* make it middle and background blur */
+
 .install-popup {
+  visibility: visible;
+  opacity: 1;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -35,13 +38,11 @@
   justify-content: center;
   gap: 20px;
 }
-.install-popup.show {
-  visibility: visible;
-  opacity: 1;
-}
-.install-popup.hidden {
+
+.install-popup .hidden {
   display: none;
 }
+
 @media (max-width: 600px) {
   .menu-icon {
     display: block;

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import logo from "./logo.png"
+import logo from './logo.png';
+
 function InstallPopup() {
-    const [deferredPrompt, setDeferredPrompt] = useState(null);
-    const [showPopup, setShowPopup] = useState(false);
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     useEffect(() => {
         const handleBeforeInstallPrompt = (event) => {
             event.preventDefault();
             setDeferredPrompt(event);
-            setShowPopup(true);
+            setIsPopupVisible(true);
         };
 
         window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
@@ -17,6 +17,8 @@ function InstallPopup() {
             window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         };
     }, []);
+
+    const [deferredPrompt, setDeferredPrompt] = useState(null);
 
     const handleInstallClick = () => {
         if (deferredPrompt) {
@@ -28,43 +30,46 @@ function InstallPopup() {
                     console.log('User dismissed the install prompt');
                 }
                 setDeferredPrompt(null);
-                setTimeout(() => { // Ensure state update propagates before DOM repaint
-                    setShowPopup(false);
-                }, 1);
             });
         }
     };
 
-    // also add hide/show logic to your install button
-
-    //  also add hide/show logic to your dismiss button
+    useEffect(() => {
+        if (!isPopupVisible) {
+            // Force a re-render to update the DOM
+            setIsPopupVisible(false);
+        }
+    }, [isPopupVisible]);
 
     return (
-        <div className={`install-popup ${showPopup ? 'hidden' : 'show'}`}>
-            {/* <div className="install-popup">
-                <p>Install KVN Production App</p>
-                <button onClick={handleInstallClick}>Install</button>
-                <button onClick={() => setShowPopup(false)}>Dismiss</button>
-            </div> */}
+        <>
+            {isPopupVisible && (
+                <div className="flex fixed top-0 w-[100vw] z-10 backdrop-blur-lg items-center justify-center h-screen bg-cover bg-center">
+                    <div className="bg-[#18181b] p-8 rounded-lg shadow-lg blur-container">
+                        {/* Your logo goes here */}
+                        <img src={logo} alt="Logo" className="mx-auto h-28 mb-4" />
 
-            <div className="flex items-center  justify-center h-screen bg-cover bg-center" >
-                <div className="bg-[#18181b] p-8 rounded-lg shadow-lg blur-container">
-                    {/* Your logo goes here */}
-                    <img src={logo} alt="Logo" className="mx-auto h-28 mb-4" />
+                        <p className="text-center text-white mb-6">Welcome to KVN App</p>
 
-                    <p className="text-center text-white mb-6">Welcome to KVN App</p>
-
-                    <div className="flex gap-5 justify-between">
-                     
-                        <button onClick={handleInstallClick} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Install</button>
-                        <button onClick={() => setShowPopup(false)} className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Dismiss</button>
+                        <div className="flex gap-5 justify-between">
+                            <button onClick={handleInstallClick} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                                Install
+                            </button>
+                            <button
+                                onClick={(event) => {
+                                    event.stopPropagation();
+                                    setIsPopupVisible(false);
+                                }}
+                                className="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400"
+                            >
+                                Dismiss
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            )}
+        </>
     );
-};
+}
 
 export default InstallPopup;
-
-
