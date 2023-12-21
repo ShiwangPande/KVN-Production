@@ -99,7 +99,7 @@ function Carousel() {
                   <CustomCloseButton onClose={onCloseModal1} />
                   <Image
                     showSkeleton
-                    src={image1}
+                    src={image3}
                     width={4000}
                     height={490}
 
