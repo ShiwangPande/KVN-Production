@@ -14,27 +14,27 @@ import MusicVideo from './Page/MusicVideo.js';
 import Distribution from './Page/Distribution.js';
 import Careers from './Page/Careers.js';
 import Contact from './Page/Contact.js';
-
+import InstallPWAButton from './Components/InstallButton.js';
 function App() {
-  
+
   return (
     <div className="App">
       <Router>
-       
 
-          <Routes>
-            <Route path="/" className='home' element={<Home />} />
-            <Route path="/production" element={<Production />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/funding" element={<Funding />} />
-            <Route path="/musicvideos" element={<MusicVideo />} />
-            <Route path="/distribution" element={<Distribution />} />
-            <Route path="/aboutus" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/contact" element={<Contact />} />
+        <InstallPWAButton />
+        <Routes>
+          <Route path="/" className='home' element={<Home />} />
+          <Route path="/production" element={<Production />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/funding" element={<Funding />} />
+          <Route path="/musicvideos" element={<MusicVideo />} />
+          <Route path="/distribution" element={<Distribution />} />
+          <Route path="/aboutus" element={<About />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
 
-          </Routes>
-      
+        </Routes>
+
         {/* <Footer /> */}
       </Router>
 
