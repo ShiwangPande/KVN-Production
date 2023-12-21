@@ -27,9 +27,9 @@ function App() {
             <Route path="/production" element={<Production />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/funding" element={<Funding />} />
-            <Route path="/music-videos" element={<MusicVideo />} />
+            <Route path="/musicvideos" element={<MusicVideo />} />
             <Route path="/distribution" element={<Distribution />} />
-            <Route path="/about-us" element={<About />} />
+            <Route path="/aboutus" element={<About />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
 
