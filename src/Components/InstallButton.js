@@ -3,6 +3,21 @@ import logo from './logo.png';
 
 function InstallPopup() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const [isInstalled, setIsInstalled] = useState(false); // Track installation status
+
+    useEffect(() => {
+        // Check for installation status on component mount
+        const checkInstallation = async () => {
+            // Replace with your actual logic to check if the app is installed
+            try {
+                const isInstalledResponse = await navigator.serviceWorker.ready; // Example using service worker
+                setIsInstalled(isInstalledResponse);
+            } catch (error) {
+                console.error('Error checking installation:', error);
+            }
+        };
+        checkInstallation();
+    }, []);
 
     useEffect(() => {
         const handleBeforeInstallPrompt = (event) => {
@@ -26,6 +41,7 @@ function InstallPopup() {
             deferredPrompt.userChoice.then((choiceResult) => {
                 if (choiceResult.outcome === 'accepted') {
                     console.log('User accepted the install prompt');
+                    setIsInstalled(true); // Update installation status
                 } else {
                     console.log('User dismissed the install prompt');
                 }
@@ -35,11 +51,11 @@ function InstallPopup() {
     };
 
     useEffect(() => {
-        if (!isPopupVisible) {
-            // Force a re-render to update the DOM
+        if (!isPopupVisible || isInstalled) {
+            // Force a re-render to update the DOM and hide the popup if installed
             setIsPopupVisible(false);
         }
-    }, [isPopupVisible]);
+    }, [isPopupVisible, isInstalled]);
 
     return (
         <>
