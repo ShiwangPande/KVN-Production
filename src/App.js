@@ -19,27 +19,23 @@ function App() {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleInstall = () => {
-    // Trigger browser's installation prompt
     window.deferredPrompt.prompt();
-    // Hide the popup after prompting
     setShowPopup(false);
   };
 
   useEffect(() => {
     window.addEventListener('beforeinstallprompt', (e) => {
-      // Prevent default prompt
-      e.preventDefault();
-      // Store the event for later use
       window.deferredPrompt = e;
-      // Show the popup
       setShowPopup(true);
     });
   }, []);
+
+
   return (
     <div className="App">
       <Router>
 
-      <InstallPopup showPopup={showPopup} onInstall={handleInstall} />
+        <InstallPopup showPopup={showPopup} onInstall={handleInstall} />
         <Routes>
           <Route path="/" className='home' element={<Home />} />
           <Route path="/production" element={<Production />} />
