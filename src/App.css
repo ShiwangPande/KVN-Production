@@ -1,5 +1,5 @@
-.home {
-  background-image: linear-gradient(
+.App {
+  /* background-image: linear-gradient(
     180deg,
     hsl(240deg 6% 10%) 0%,
     hsl(240deg 6% 10%) 8%,
@@ -15,9 +15,15 @@
     hsl(319deg 18% 46%) 85%,
     hsl(351deg 23% 61%) 92%,
     hsl(25deg 28% 76%) 100%
-  );
+  ); */
+  /* background: url("https://i.postimg.cc/wMr1nqM7/White-and-Green-Simple-Lined-Textured-Minimalist-Antibiotic-Medical-Presentation.png"); */
+  background: #f8aa21;
+  /* height: 100vh; */
+  /* position: relative; */
+  /* z-index: -1; */
   box-sizing: border-box;
 }
+
 /* make it middle and background blur */
 
 .install-popup {
@@ -82,16 +88,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f8aa21;
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #000;
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #000;
   }
 }

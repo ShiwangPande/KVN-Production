@@ -44,12 +44,12 @@ function InstallPopup() {
     return (
         <>
             {isPopupVisible && (
-                <div className="flex fixed top-0 w-[100vw] z-10 backdrop-blur-lg items-center justify-center h-screen bg-cover bg-center">
-                    <div className="bg-[#18181b] p-8 rounded-lg shadow-lg blur-container">
+                <div className="flex fixed top-0 w-[100vw] z-20 backdrop-blur-lg items-center justify-center h-screen bg-cover bg-center">
+                    <div className="backdrop-blur-[1.8px] bg-white/60  p-8 rounded-lg shadow-lg blur-container">
                         {/* Your logo goes here */}
                         <img src={logo} alt="Logo" className="mx-auto h-28 mb-4" />
 
-                        <p className="text-center text-white mb-6">Welcome to KVN App</p>
+                        <p className="text-center text-black mb-6">Welcome to KVN App</p>
 
                         <div className="flex gap-5 justify-between">
                             <button onClick={handleInstallClick} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">

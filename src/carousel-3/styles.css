@@ -10,7 +10,7 @@ body {
   padding-bottom: 100px;
   padding-top: 100px;
   /* padding: 21px 0px 24px 20px; */
-  background: #18181b;
+  background: #f8aa21;
 }
 .swiper-wrapper3 {
   margin: 21px 0px 40px 20px;
@@ -36,7 +36,8 @@ body {
   translate: -50% 0;
   width: 800vw;
   height: 800vw;
-  background: #18181b;
+  background: #f8aa21;
+
   border-radius: 50%;
 }
 
@@ -53,11 +54,7 @@ body {
   flex-direction: row;
   padding: 1rem;
   align-items: center;
-  background: linear-gradient(
-    to right top,
-    rgb(100, 116, 139),
-    rgb(254, 249, 195)
-  );
+  background: rgb(231, 227, 227);
 }
 .swiper-button-prev {
   color: #ffffff !important;
@@ -67,21 +64,37 @@ body {
   color: #ffffff !important;
 }
 .swiper-button-prev:hover {
-  color: #a49287 !important;
+  color: #000000 !important;
 }
 
 .swiper-button-next:hover,
 .swiper-rtl .swiper-button-prev:hover {
-  color: #a49287 !important;
+  color: #000000 !important;
+}
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 .next-close {
   position: absolute;
-
-  height: 34px;
+  /* background: white; */
+  height: 40px;
+  border-radius: 50%;
   top: 0px;
   right: 0px;
 }
-
+.next-close :hover {
+  background: #302f2f3d;
+  height: 40px;
+  
+  border-radius: 50%;
+}
 @media only screen and (max-width: 767px) {
   .swiper-wrapper3 {
     width: 100vw;
