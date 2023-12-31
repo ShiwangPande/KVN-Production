@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.png';
+import logo from '../AE LOGO.svg';
 
 function InstallPopup() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);

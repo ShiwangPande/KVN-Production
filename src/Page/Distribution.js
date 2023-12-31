@@ -74,9 +74,9 @@ function Distribution() {
       <h1 class="mb-4 text-4xl font-extrabold leading-9 mt-10 	tracking-wide	 text-gray-900 md:text-5xl lg:text-6xl">
         Distributing by
         <span class="text-yellow-600 ">  KVN</span></h1>
-      <p class="text-lg font-normal text-gray-500 lg:text-xl ">You may find a Film Production House but it's not easy to find a Film Distribution Company. KVN Productions is here to prove it wrong.
+      <p class="text-lg font-normal text-gray-500 lg:text-xl ">You may find a Film Production House but it's not easy to find a Film Distribution Company. Abhijit Enterprises is here to prove it wrong.
 
-        Here are a few movies distributed by KVN Productions.</p>
+        Here are a few movies distributed by Abhijit Enterprises.</p>
 
 
       <div class="flex  gap-10 mt-5 justify-evenly">

@@ -112,16 +112,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -186,16 +186,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -260,16 +260,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -334,16 +334,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -408,16 +408,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -482,16 +482,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -556,16 +556,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -630,16 +630,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -704,16 +704,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -778,16 +778,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -852,16 +852,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
@@ -926,16 +926,16 @@ function MusicVideo() {
                     <ModalHeader className="flex flex-col gap-1 text-5xl  font-bold">KD - The Devil | Title Teaser | Kannada Movie |Prem's |Dhruva Sarja | Arjun Janya | KVN</ModalHeader>
                     <ModalBody >
                       <h2 id="modal-description" >
-                        <h1 className='font-bold'>KVN PRODUCTIONS 2:48</h1> <br />
+                        <h1 className='font-bold'>Abhijit Enterprises 2:48</h1> <br />
 
-                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! KVN Productions presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for KVN Productions. Stay tuned for more!!!
+                        <p className='font-semibold text-lg tracking-wide 	leading-9 '>KD Title Teaser is here! Abhijit Enterprises presents the Title Teaser of KD - The Devil. Showman Prem's directorial manoeuvre #KD features action prince Dhruva Sarja in the lead. Magical composer Arjun Janya has composed the music for this pan India action flick for Abhijit Enterprises. Stay tuned for more!!!
                           ----------------------------------------------
                           Turn on Subtitles in Your Preferred Language.
 
                           #kdtitleteaser #kvn #prems #actionprince #dhruvasarja #kvnproductions #arjunjanya
                           ----------------------------------------------
                           ♫ Movie               :  KD - The Devil
-                          ♫ Banner             : KVN Productions
+                          ♫ Banner             : Abhijit Enterprises
                           ♫ Starring            : Dhruva Sarja
                           ♫ Producer          : KVN
                           ♫ Director            : Showman Prem's
