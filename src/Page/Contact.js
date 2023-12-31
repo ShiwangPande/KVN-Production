@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 import call from "./call.svg";
 import mail from "./mail.svg";
 function Contact() {

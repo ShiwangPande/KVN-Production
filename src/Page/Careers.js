@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 
 function Careers() {
   const [showNavbar, setShowNavbar] = useState(false)

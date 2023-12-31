@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 
 function OurFounder() {
     const [showNavbar, setShowNavbar] = useState(false)

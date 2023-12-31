@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "./logoss.webp"
+import logo from "./AE LOGO.svg"
 function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false)
 
@@ -25,20 +25,20 @@ function Navbar() {
               <li>
                 <a href="/" class="block  py-2 px-3 text-black bg-white rounded md:bg-transparent md:text-white md:p-0  font-semibold md:font-normal  md:dark:text-white" aria-current="page">Home</a>
               </li>
-              
+
               <li>
                 <a href="/aboutus" class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 text-[#000000] md:hover:text-white  hover:text-white ">About Us</a>
               </li>
-              
+
               <li>
                 <a href="/ourfounder" class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 text-[#000000] md:hover:text-white  hover:text-white ">Our Founder</a>
               </li>
-            
+
               <li>
                 <a href="/distribution" class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 text-[#000000] md:hover:text-white  hover:text-white ">Distribution</a>
               </li>
-           
-           
+
+
               <li>
                 <a href="/contact" class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 text-[#000000] md:hover:text-white  hover:text-white ">Contact Us</a>
               </li>

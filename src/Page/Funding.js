@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Image } from "@nextui-org/react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";

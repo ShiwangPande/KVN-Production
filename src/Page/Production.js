@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Image } from "@nextui-org/react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 function Production() {
     const { isOpen: isOpenModal1, onOpen: onOpenModal1, onOpenChange: onOpenChange1 } = useDisclosure();
     const { isOpen: isOpenModal2, onOpen: onOpenModal2, onOpenChange: onOpenChange2 } = useDisclosure();

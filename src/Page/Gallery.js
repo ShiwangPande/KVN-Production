@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation, useInView } from "framer-motion";
-import logo from "../logoss.webp"
+import logo from "../AE LOGO.svg"
 import { Tabs, Tab } from "@nextui-org/react";
 
 
