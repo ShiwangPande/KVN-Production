@@ -111,7 +111,7 @@ body {
     width: 800vw;
     height: 805vw;
     background-position: center;
-    background: #18181b;
+    background: #f8aa21;
     border-radius: 50%;
   }
   .slide_img {
@@ -123,13 +123,14 @@ body {
     padding-bottom: 100px;
     padding-top: 130px;
     /* padding: 21px 0px 24px 20px; */
-    background: #18181b;
+    background: #f8aa21;
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: relative;
-    top: 2px;
+    top: 15px;
   }
+ 
   .event_modal {
     display: flex;
     flex-direction: column;
