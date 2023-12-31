@@ -59,7 +59,7 @@
     position: absolute;
     right: 0;
     top: 100px;
-    background-color: #18181b;
+    background-color: #f8aa21;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
