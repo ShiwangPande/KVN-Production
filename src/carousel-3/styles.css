@@ -92,8 +92,14 @@ body {
 .next-close :hover {
   background: #302f2f3d;
   height: 40px;
-  
+
   border-radius: 50%;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  margin-top: 0;
 }
 @media only screen and (max-width: 767px) {
   .swiper-wrapper3 {
@@ -130,7 +136,13 @@ body {
     position: relative;
     top: 15px;
   }
- 
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    margin-top: 20px;
+  }
+
   .event_modal {
     display: flex;
     flex-direction: column;
