@@ -106,7 +106,10 @@ function Home() {
                     <CardBody>
 
                         <p className="text-xl mx-5 my-5 text-justify antialiased hover:subpixel-antialiased leading-8 tracking-wide font-serif	">
-                            Abhijit Enterprises is one of the most prestigious film production, funding and Distribution company based in Bangalore. The company was founded by Mr. Venkat K Narayana (KVN)  and Mrs. Nisha Venkat with an ambition to showcase world-class films to the people of Karnataka. Through Abhijit Enterprises, we aim to unearth hidden talents who are waiting to showcase their artistic prowess. This, in turn, would generate extensive employment opportunities to many deserving talents across the state.
+                            Abhijit Enterprises stands as more than just a distribution house; it embodies the role of a curator, weaving together captivating stories that effortlessly transcend borders. Immerse yourself in a realm where the enchantment of cinema unfolds. Discover an expansive collection of movies that traverse languages, genres, and emotions.
+                            <br />
+                            Founded in 1985 by the visionary Mr. Tharian Jacob, Abhijit Enterprises has a rich legacy that began under the name "Shri Marudhr Pictures" before transforming into the cinematic powerhouse it is today. The company's evolution reflects its commitment to growth and innovation within the film industry.
+
                         </p>
                     </CardBody>
                 </Card>
@@ -115,21 +118,21 @@ function Home() {
 
                     <div class="relative h-[70vh] overflow-hidden rounded-lg md:h-[70vh]">
                         <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper">
-                            <SwiperSlide> 
-                                  <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
-                                <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
-                                    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
-                                    <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
-                                    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                            <SwiperSlide>
+                                <section class="bg-center  bg-no-repeat bg-cover w-full h-auto lg:w-[100vw]  lg:h-[80vh] bg-[url('https://i.postimg.cc/fLYhdXYv/sddefault.jpg')] bg-gray-700 bg-blend-multiply">
+                                    <div class="px-4 mx-auto max-w-screen-2xl text-center py-24 lg:py-56">
+                                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">KAATERA Official 4K Trailer</h1>
+                                        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Presenting the KAATERA Official 4K Trailer Starring: Challenging ⭐" Darshan, Aradhanaa, Jagapathi Babu & Others Exclusive Only On Anand Audio Official Youtube Channel..!!! </p>
+                                        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
 
-                                        <Button onPress={onOpenModal1} class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                                            Play Video  <svg width="40px" className="ml-2" height="40px" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z" fill="#000" />
-                                            </svg>
-                                        </Button>
+                                            <Button onPress={onOpenModal1} class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                                                Play Video  <svg width="40px" className="ml-2" height="40px" viewBox="0 0 24 24" fill="#000" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z" fill="#000" />
+                                                </svg>
+                                            </Button>
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
                                 <Modal
                                     backdrop="opaque"
                                     isOpen={isOpenModal1}
