@@ -11,7 +11,6 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Navigation } from 'swiper/modules';
-
 // import required modules
 import { Pagination } from 'swiper/modules';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
@@ -114,7 +113,7 @@ function Home() {
                     </CardBody>
                 </Card>
 
-                <div id="indicators-carousel" class="relative w-full my-10" data-carousel="static">
+                <div id="indicators-carousel" class="relative w-full mt-10" data-carousel="static">
 
                     <div class="relative h-[70vh] overflow-hidden rounded-lg md:h-[70vh]">
                         <Swiper pagination={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper">
